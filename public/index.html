@@ -8,9 +8,23 @@
 </head>
 <body>
     <div id="game-container">
-        <img id="mosquito" src="mosquito.png" alt="Mosquito">
+        <img id="mosquito-img" src="anopheles.png" alt="Mosquito">
         <div id="message"></div>
     </div>
+
+    <div id="scoreboard">
+        <p>Уровень: <span id="level">1</span></p>
+        <p>Цель: <span id="target">0</span> комаров</p>
+        <p>Время: <span id="timer">10</span> сек</p>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <p id="modal-text"></p>
+            <button id="modal-button">Продолжить</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
