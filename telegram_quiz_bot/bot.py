@@ -133,7 +133,7 @@ async def start(message: types.Message):
 @dp.callback_query(lambda call: call.data == "play_game")
 async def play_game(callback: types.CallbackQuery):
     await callback.answer()  # Закрыть уведомление
-    game_url = "https://taptosurvive.vercel.app"  # Ссылка на опубликованную игру
+    game_url = "https://janesable.github.io/mosquito_ninja/"  # Ссылка на опубликованную игру
     web_app = WebAppInfo(url=game_url)
     await callback.message.answer(
         "Нажми на кнопку ниже, чтобы открыть игру прямо в Telegram:",
